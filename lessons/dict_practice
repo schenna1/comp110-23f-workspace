@@ -1,0 +1,35 @@
+"""dict practice"""
+
+#create dict
+ice_cream: dict[str, int] = {"Chocolate": 12, "Vanilla": 8, "Strawberry": 5}
+
+#add key value pair
+ice_cream["Mint"] = 3
+
+#remove key value pair
+ice_cream.pop("Mint")
+
+#add 3 to choco
+ice_cream["Chocolate"] = 15
+
+#print lenght of ice cream
+x: int = len(ice_cream)
+print(x)
+
+#check if mint and choco r in ice cream
+is_mint: bool = "Mint" in ice_cream
+is_choco: bool = "Chocolate" in ice_cream
+print(is_mint)
+print(is_choco)
+
+#if mint is in ice_cream, print value. if not print"no orders of mint"
+if "Mint" in ice_cream:
+    print(f"Number of mint orders: {ice_cream['Mint']}")
+else:
+    print("no orders of mint")
+
+#use for loop to print keys
+for key in ice_cream:
+    print(ice_cream[key])
+
+print(ice_cream)

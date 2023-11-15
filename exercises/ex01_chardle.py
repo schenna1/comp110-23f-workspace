@@ -1,4 +1,4 @@
-""""EX01 - Chardle _ A cute step toward Wordle."""
+"""EX01 - Chardle - A cute step towards wordle."""
 __author__ = "730956810"
 
 
@@ -13,7 +13,7 @@ if len(single_character) != 1:
     exit()
 
 matchingcharacter: int = 0
-print("Searching for " + single_character + " in " +character_word_5)
+print("Searching for " + single_character + " in " + character_word_5)
 
 
 if single_character == character_word_5[0]:
@@ -24,17 +24,16 @@ if single_character == character_word_5[1]:
     matchingcharacter = matchingcharacter + 1
 if single_character == character_word_5[2]:
     print(single_character + " found at index 2")
-    matchingcharacter = matchingcharacter +1
+    matchingcharacter = matchingcharacter + 1
 if single_character == character_word_5[3]:
     print(single_character + " found at index 3")
-    matchingcharacter = matchingcharacter+1
+    matchingcharacter = matchingcharacter + 1
 if single_character == character_word_5[4]:
     print(single_character + " found at index 4")
-    matchingcharacter=matchingcharacter+1
-if matchingcharacter==0:
-    print("No instances of " +single_character+ " found in " + character_word_5)
-if matchingcharacter != 0:
-    print(str(matchingcharacter) + " instance of " + single_character + " found in " + character_word_5 )
-
-     
-    
+    matchingcharacter = matchingcharacter + 1
+if matchingcharacter == 0:
+    print("No instances of " + single_character + " found in " + character_word_5)
+if matchingcharacter >= 1:
+    print(str(matchingcharacter) + " instances of " + single_character + " found in " + character_word_5)
+if matchingcharacter == 1:
+    print(str(matchingcharacter) + " instance of " + single_character + " found in " + character_word_5)
